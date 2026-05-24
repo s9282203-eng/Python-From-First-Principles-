@@ -1,0 +1,192 @@
+# =========================================================
+# PYTHON FROM FIRST PRINCIPLES
+# Beginner Examples Collection
+# =========================================================
+
+
+# =========================================================
+# 1. VARIABLES & DATA TYPES
+# =========================================================
+
+name = "Subham"
+age = 27
+height = 5.9
+is_student = True
+
+print("=== VARIABLES & DATA TYPES ===")
+print(name)
+print(age)
+print(height)
+print(is_student)
+
+print(type(name))
+print(type(age))
+print(type(height))
+print(type(is_student))
+
+
+# =========================================================
+# 2. OPERATORS
+# =========================================================
+
+a = 10
+b = 5
+
+print("\n=== OPERATORS ===")
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+
+print("Greater Than:", a > b)
+print("Equal:", a == b)
+
+print(True and False)
+print(True or False)
+
+
+# =========================================================
+# 3. CONDITIONS
+# =========================================================
+
+print("\n=== CONDITIONS ===")
+
+temperature = 35
+
+if temperature > 30:
+    print("Hot Weather")
+else:
+    print("Cool Weather")
+
+
+# =========================================================
+# 4. LOOPS
+# =========================================================
+
+print("\n=== FOR LOOP ===")
+
+for i in range(5):
+    print(i)
+
+print("\n=== WHILE LOOP ===")
+
+x = 0
+
+while x < 5:
+    print(x)
+    x += 1
+
+
+# =========================================================
+# 5. FUNCTIONS
+# =========================================================
+
+print("\n=== FUNCTIONS ===")
+
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+
+print("Result:", result)
+
+
+# =========================================================
+# 6. DATA STRUCTURES
+# =========================================================
+
+print("\n=== LIST ===")
+
+numbers = [1, 2, 3, 4]
+
+print(numbers)
+print(numbers[0])
+
+print("\n=== DICTIONARY ===")
+
+student = {
+    "name": "Subham",
+    "age": 27
+}
+
+print(student)
+print(student["name"])
+
+
+# =========================================================
+# 7. INPUT / OUTPUT
+# =========================================================
+
+print("\n=== INPUT / OUTPUT ===")
+
+# Uncomment to test user input
+
+# user_name = input("Enter your name: ")
+# print("Hello", user_name)
+
+
+# =========================================================
+# 8. MEMORY REFERENCES
+# =========================================================
+
+print("\n=== MEMORY REFERENCES ===")
+
+a = [1, 2, 3]
+b = a
+
+print(a)
+print(b)
+
+b.append(4)
+
+print("After Modification")
+
+print(a)
+print(b)
+
+
+# =========================================================
+# 9. OBJECT ORIENTED PROGRAMMING (OOP)
+# =========================================================
+
+print("\n=== OOP ===")
+
+class Car:
+
+    def __init__(self, brand):
+        self.brand = brand
+
+    def start(self):
+        print(self.brand, "Engine Started")
+
+
+mycar = Car("Toyota")
+
+mycar.start()
+
+
+# =========================================================
+# 10. SIMPLE CALCULATOR PROJECT
+# =========================================================
+
+print("\n=== SIMPLE CALCULATOR ===")
+
+def calculator():
+
+    x = 10
+    y = 5
+
+    print("Addition:", x + y)
+    print("Subtraction:", x - y)
+    print("Multiplication:", x * y)
+    print("Division:", x / y)
+
+calculator()
+
+
+# =========================================================
+# END
+# =========================================================
+
+print("\n=== PROGRAM FINISHED ===")
