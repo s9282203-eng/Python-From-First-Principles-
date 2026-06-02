@@ -1,0 +1,13 @@
+name = "Subham"
+age = 28
+
+if age > 18:
+    print("Adult")
+
+for i in range(3):
+    print(i)
+
+def greet(name):
+    print("Hello", name)
+
+greet(name)
