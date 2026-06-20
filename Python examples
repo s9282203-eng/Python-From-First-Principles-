@@ -1,0 +1,67 @@
+# Student Management Program
+
+student_name = "Subham"
+student_age = 28
+
+math_marks = 85
+science_marks = 90
+english_marks = 80
+
+marks = [math_marks, science_marks, english_marks]
+
+student = {
+    "name": student_name,
+    "age": student_age
+}
+
+def calculate_average(mark_list):
+
+    total = 0
+
+    for mark in mark_list:
+        total = total + mark
+
+    average = total / len(mark_list)
+
+    return average
+
+def calculate_grade(avg):
+
+    if avg >= 90:
+        return "A"
+
+    elif avg >= 80:
+        return "B"
+
+    elif avg >= 70:
+        return "C"
+
+    else:
+        return "D"
+
+average_marks = calculate_average(marks)
+
+grade = calculate_grade(average_marks)
+
+print("Student Information")
+print("-------------------")
+
+print("Name:", student["name"])
+print("Age:", student["age"])
+
+print("\nMarks")
+
+for mark in marks:
+    print(mark)
+
+print("\nAverage:", average_marks)
+print("Grade:", grade)
+
+if grade == "A":
+    print("Excellent Performance")
+
+elif grade == "B":
+    print("Good Performance")
+
+else:
+    print("Needs Improvement")
